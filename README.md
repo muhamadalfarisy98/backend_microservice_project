@@ -1,4 +1,4 @@
-# Darasa (Islamic) School Management System
+# Darasa School Management System
 **Backend Microservice Python** :wave:
 
 ## Description
