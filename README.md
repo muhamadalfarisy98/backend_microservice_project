@@ -1,5 +1,5 @@
-# Darasa (Islamic) School Management System
-Tugas Akhir SanberCode : **Backend Microservice Python Batch 25** :wave:
+# Darasa School Management System
+**Backend Microservice Python** :wave:
 
 ## Description
 Berisikan implementasi aplikasi _**Backend**_ pada **school system database management** dan juga _**microservice**_ dalam bentuk REST API.
