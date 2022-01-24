@@ -213,13 +213,13 @@ REST APIs documentation (using **postman**) is described below.
 `GET localhost:5000/parent`
 
 > BODY
-```
+```json
 {
     "parent_id" : 4
 }
 ```
 > Response
-```
+```json
 {
     "id": 4,
     "username": "zidan",
@@ -232,13 +232,13 @@ REST APIs documentation (using **postman**) is described below.
 `GET localhost:5000/parent/request_token`
 
 > BODY
-```
+```json
 {
     "email":"ridwan@gmail.com"
 }
 ```
 > Response
-```
+```json
 {
     "data": {
         "username": "ridwan",
@@ -256,7 +256,7 @@ mengedit isi table parent
 Token    <token>
 ```
 > BODY
-```
+```json
 {
     "parent_id" : 5,
     "data": {
@@ -281,14 +281,14 @@ Token    <token>
 Token    <token>
 ```
 > BODY
-```
+```json
 {
     "parent_id" : 5
 }
 ```
 > Response
 ```
-{
+{json
     "message": "Parent dengan Id 5 berhasil dihapus"
 }
 ```
@@ -300,7 +300,7 @@ Token    <token>
 `GET localhost:5000/teachers`
 
 > Response
-```
+```json
 [
     {
         "id": 1,
@@ -327,13 +327,13 @@ get teacher by id
 `GET localhost:5000/teacher`
 
 > BODY
-```
+```json
 {
     "teacher_id" : 3
 }
 ```
 > Response
-```
+```json
 {
     "id": 3,
     "username": "raffasya",
@@ -378,7 +378,7 @@ create teacher record
 Token    <token>
 ```
 > BODY
-```
+```json
 {
     "data" : {
         "username" :"raffasya",
@@ -390,7 +390,7 @@ Token    <token>
 }
 ```
 > Response
-```
+```json
 {
     "message": "Teacher succesfully created",
     "code": "200"
