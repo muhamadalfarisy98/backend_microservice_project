@@ -26,14 +26,14 @@ Berisikan implementasi aplikasi _**Backend**_ pada **school system database mana
 ## Persiapan database
 untuk database berikut script initial yang digunakan :
 pembuatan **database**
-```
-@membuat database:
+```sql
+-- membuat database:
 CREATE DATABASE school;
 USE school;
 ```
 
 pembuatan **tabel**
-```
+```sql
 @membuat table parent:
 create table parent (
     parent_id int AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -109,7 +109,7 @@ create table sesi (
 ```
 
 contoh pengisian **column/field** via sql
-```
+```sql
 -- insert data parent
 insert into parent 
 	(username,email,nama,phone)
@@ -155,7 +155,7 @@ values
 
 ## Installation Libraries
 Using python 3.x series 
-```
+```bash
 pip install flask
 pip install fastapi
 pip install uvicorn
@@ -177,7 +177,7 @@ REST APIs documentation (using **postman**) is described below.
 `GET localhost:5000/parents`
 
 > Response
-```
+```json
 [
     {
         "id": 1,
